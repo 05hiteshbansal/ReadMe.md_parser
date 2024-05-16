@@ -17,9 +17,18 @@ const NormalText = ({code}) => {
   // const y=
    //console.log(compiled);
   return (
-    <div className=' p-5 min-w-[50vw] min-h-[100vh] bg-[#262a31] text-white prose dark:prose-invert'>
-    <ReactMarkdown remarkPlugins={[remarkMath , remarkGfm ]} rehypePlugins={[rehypeRaw , rehypeKatex]} children={code} />
+    <>
+    <div className='flex flex-col w-full '>
+<div className='text-center text-xl font-serif bg-[#FFF455] p-2 text-[#007F73]'>
+    Output
+</div>
+    <div className=' dark:prose-invert p-2 max-w-none min-h-[100vh] bg-[#262a31] text-white prose '>
+    
+    <ReactMarkdown remarkPlugins={[remarkMath , remarkGfm ]} rehypePlugins={[rehypeRaw , rehypeKatex]}  >{code}</ReactMarkdown>
     </div>
+    </div>
+
+    </>
   )
 }
 

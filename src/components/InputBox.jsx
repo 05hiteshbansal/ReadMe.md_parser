@@ -9,13 +9,17 @@ const InputBox = ({ language,code,setCode }) => {
     setValue(value);
     setCode(value)
     console.log(value);
-    // onChange("code", value);
-  };
+     };
 
   return (
-    <div className="overlay rounded-md overflow-hidden w-[50vw] min-h-[50vh] shadow-4xl text-lg">
+  <div className=" flex flex-col">
+
+    <div className=" text-center text-xl font-serif bg-[#FFF455] p-2 text-[#007F73]">
+      Editor
+    </div>
+    <div className="rounded-md w-[50vw] min-h-[100vh] shadow-4xl text-lg">
       <Editor
-        height="100%"
+      
         width={`100%`}
         language={language || "markdown"}
         value={code}
@@ -29,6 +33,7 @@ const InputBox = ({ language,code,setCode }) => {
         }
       />
     </div>
+  </div>
   );
 };
 export default InputBox;
