@@ -21,7 +21,7 @@ const DataFetching = ({ setCode }) => {
     const branch = data.branch || "main";
     if (!owner || !name) {
       toast({
-        description: "Please enter Repositry Owner or Repositry Name",
+        description: "Please enter Repositry Owner and Repositry Name",
         className:"dark:bg-yellow-200 p-4   font-serif font-bold dark:text-yellow-800 "
       });
     } else {
