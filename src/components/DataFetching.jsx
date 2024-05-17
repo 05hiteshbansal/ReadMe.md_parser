@@ -46,7 +46,7 @@ const DataFetching = ({ setCode }) => {
         <div className="flex flex-col lg:flex-row justify-between  items-center p-10 font-mono ">
           <div className="grid w-full max-w-sm items-center gap-1.5 ">
             <Label htmlFor="owner" className=" text-xl">
-              Repositry Owner
+              Repository Owner
             </Label>
             <Input
               type="text"
@@ -59,7 +59,7 @@ const DataFetching = ({ setCode }) => {
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="name" className=" text-xl">
-              Repositry Name
+              Repository Name
             </Label>
             <Input
               type="text"
