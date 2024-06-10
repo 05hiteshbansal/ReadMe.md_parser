@@ -18,11 +18,11 @@ const NormalText = ({code}) => {
    //console.log(compiled);
   return (
     <>
-    <div className='flex flex-col w-full '>
+    <div className='flex flex-col w-full h-[100vh]'>
 <div className='text-center text-xl font-serif bg-[#FFF455] p-2 text-[#007F73]'>
     Output
 </div>
-    <div className=' dark:prose-invert p-2 max-w-none min-h-[100vh] bg-[#262a31] text-white prose '>
+    <div className=' dark:prose-invert p-5 max-w-none min-h-full overflow-y-scroll bg-[#262a31] text-white prose '>
     
     <ReactMarkdown remarkPlugins={[remarkMath , remarkGfm ]} rehypePlugins={[rehypeRaw , rehypeKatex]}  >{code}</ReactMarkdown>
     </div>
